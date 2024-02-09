@@ -1,3 +1,4 @@
+# Prerequisites
 *.d
 
 # Compiled Object files
@@ -28,4 +29,3 @@
 # Executables
 *.exe
 *.out
-*.app
