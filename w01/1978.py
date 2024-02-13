@@ -1,3 +1,6 @@
+import math
+
+
 n = int(input())
 count = 0
 
@@ -12,7 +15,7 @@ for i in range(n):
         continue
     else:
         is_prime = True
-        for j in range(3, data[i] // 2 + 1):
+        for j in range(3, int(math.sqrt(data[i])) + 1):
             if data[i] % j == 0:
                 is_prime = False
                 continue
