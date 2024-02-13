@@ -5,7 +5,6 @@ n, m = map(int, input().split(" "))
 
 numArr = list(map(int, input().split(" ")))
 
-# 3중 for문?
 resultArr = list(combinations(numArr, 3))
 
 bench = math.inf
