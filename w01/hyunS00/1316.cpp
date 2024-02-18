@@ -21,7 +21,6 @@ int main(){
     int cnt = 0;
     string word;
 
-
     while(N--){
         cin >> word;
         memset(alpabet,-1,sizeof(alpabet));
