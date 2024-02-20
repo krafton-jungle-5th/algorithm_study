@@ -26,6 +26,7 @@ int main() {
                 dp[i] = max(dp[i], dp[j]);//핵심 아이디어
         }
         dp[i] += 1;
+        //커밋 컨벤션 수정하기
     }
     cout << *max_element(dp, dp + n);
     return 0;
