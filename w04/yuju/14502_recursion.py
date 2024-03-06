@@ -36,7 +36,7 @@ def bfs():
                 
     result = max(result, count)
 
-def make_wall(count):
+def make_wall_recursion(count):
     if count == 3:
         bfs()
         return
@@ -44,13 +44,13 @@ def make_wall(count):
         for j in range(y):
             if lab[i][j] == 0:
                 lab[i][j] = 1
-                make_wall(count+1)
+                make_wall_recursion(count+1)
                 lab[i][j] = 0
                 
 x, y = map(int, input().split())
 lab = [list(map(int, input().split())) for _ in range(x)]
 
 result = 0
-make_wall(0)
+make_wall_recursion(0)
 
 print(result)
